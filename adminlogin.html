@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Login</title>
+<link rel="stylesheet" href="appoinment.css">
+</head>
+<body>
+<h1>Car Servicing Admin Login</h1>
+<div class="container">
+<div class="form">
+<h2>Add Appointment</h2>
+<br>
+<label for="name">Customer Name:</label>
+<input type="text" id="name" placeholder="Enter Customer Name">
+<label for="date">Date:</label>
+<input type="date" id="date" required>
+<label for="timeslot">Time Slot:</label>
+<select id="timeslot" name="timeslot" required>
+<option value="selected disabled">Select a time slot</option>
+<option value="9am-10am">9am-10am</option>
+<option value="10am-11am">10am-11am</option>
+<option value="11am-12pm">11am-12pm</option>
+<option value="1pm-2pm">1pm-2pm</option>
+<option value="2pm-3pm">2pm-3pm</option>
+<option value="3pm-4pm">3pm-4pm</option>
+</select>
+<label for="category">Services:</label>
+<select id="category" name="category" required>
+<option value="Services">Available services</option>
+<option value="Digital Health Check-up">Digital Health Checkup</option>
+<option value="Engine Oil Top up">Engine Oil Top up</option>
+<option value="Coolant Top Up">Coolant Top Up</option>
+<option value="Brake Oil Top Up">Brake Oil Top Up</option>
+<option value="Complete Car Wash and Interior vacuum">Complete Car 
+Wash and Interior vacuum</option>
+<option value="Tyre Polish, Dashboard Polish & more">Tyre Polish, 
+Dashboard Polish & more</option>
+<option value="Others">Others</option>
+</select>
+<label for="description">Description:</label>
+<textarea id="description" placeholder="Enter appointment 
+details"></textarea>
+<button id="add-btn">Add Appointment</button>
+</div>
+<div class="filter">
+<h2>Filter Appointments</h2>
+<br>
+<label for="filter-date">Filter by Date:</label>
+<input type="date" id="filter-date">
+<label for="filter-category">Filter by Category:</label>
+<select id="filter-category" name="filter-category">
+<option value="Services">Services</option>
+<option value="Digital Health Check-up">Digital Health Checkup</option>
+<option value="Engine Oil Top up">Engine Oil Top up</option>
+<option value="Coolant Top Up">Coolant Top Up</option>
+<option value="Brake Oil Top Up">Brake Oil Top Up</option>
+<option value="Complete Car Wash and Interior vacuum">Complete Car 
+Wash and Interior vacuum</option>
+<option value="Tyre Polish, Dashboard Polish & more">Tyre Polish, 
+Dashboard Polish & more</option>
+<option value="Others">Others</option>
+</select>
+<label for="filter-timeslot">Filter by Timeslot:</label>
+<select id="filter-timeslot" name="filter-timeslot">
+<option value="" selected disabled>Select a time slot</option>
+<option value="9am-10am">9am-10am</option>
+<option value="10am-11am">10am-11am</option>
+<option value="11am-12pm">11am-12pm</option>
+<option value="1pm-2pm">1pm-2pm</option>
+<option value="2pm-3pm">2pm-3pm</option>
+<option value="3pm-4pm">3pm-4pm</option>
+</select>
+<button id="filter-btn">Filter</button>
+<span id="filter-count"></span>
+<button id="logout-btn">Logout</button>
+</div>
+<div class="list">
+<h2>Appointments</h2>
+<br><hr>
+<ul id="appointment-list"></ul>
+</div>
+</div>
+<table id="bookings">
+</table>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/5.15.3/js/all.min.js" integrity="sha512-
+RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+
+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="appoinment.js"></script>
+</body>
+</html
